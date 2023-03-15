@@ -1,1 +1,7 @@
-@import "typography";
+@use "./typography" as *;
+
+* {
+    font-family: "Avenir Next";
+    padding: 0;
+    margin: 0;
+}
