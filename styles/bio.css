@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Avenir Next";
   src: url(/assets/fonts/AvenirNextLTPro-Regular.otf) format("otf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Avenir Next";
@@ -16,4 +17,33 @@
   font-family: "Avenir Next";
   padding: 0;
   margin: 0;
+}
+
+.header {
+  background-color: #323232;
+  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.header__logo {
+  padding-bottom: 1rem;
+}
+.header__nav {
+  width: 100%;
+}
+.header__nav-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header__nav-list-item {
+  text-decoration: none;
+  color: white;
+}
+.header__nav-list-item--active {
+  border-bottom: solid #AFAFAF 2px;
 }/*# sourceMappingURL=bio.css.map */
