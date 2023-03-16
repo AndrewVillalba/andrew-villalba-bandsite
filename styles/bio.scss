@@ -1,33 +1,46 @@
 @use "./partials/globals" as *;
 
-.header {
-    background-color: #323232;
-    max-width: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    
-    &__logo {
-        padding-bottom: 1rem;
-    }
-    &__nav {
-        width: 100%;
-    }
-    &__nav-list {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    &__nav-list-item {
-        text-decoration: none;
-        color: white;
-    }
-        &__nav-list-item--active {
-            border-bottom: solid #AFAFAF 2px;
-        }
 
+.hero {
+    background-image: url(/assets/images/hero-bio.jpg);
+    background-size: cover;
+    height: 25vh;
+    padding-left: 1rem;
+    width: 100%;
+
+    &__text {
+        height: 25vh;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.about {
+    padding: 0 1rem;
+
+    &__heading {
+        padding: 1.5rem 0 1rem 0;  
+    }
+    
+    &__image-container {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+
+    &__image {
+        width: 100%;
+
+    }
+}
+
+.gallery {
+    width: 100%;
+
+    &__photos {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
