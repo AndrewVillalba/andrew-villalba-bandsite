@@ -13,6 +13,16 @@
   src: url(/assets/fonts/AvenirNextLTPro-Bold.otf) format("otf");
   font-weight: 700;
 }
+.about {
+  color: #323232;
+}
+.about__heading {
+  font-weight: 600;
+}
+.about__quote {
+  line-height: 2;
+}
+
 * {
   font-family: "Avenir Next";
   padding: 0;
@@ -80,6 +90,7 @@
 }
 .about__image {
   width: 100%;
+  padding-bottom: 1rem;
 }
 
 .gallery {

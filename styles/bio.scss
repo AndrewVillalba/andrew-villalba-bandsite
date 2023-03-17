@@ -1,4 +1,7 @@
 @use "./partials/globals" as *;
+@use "./partials/typography" as *;
+@use "./partials/variables" as *;
+@use './partials/mixins' as *;
 
 
 .hero {
@@ -7,6 +10,7 @@
     height: 25vh;
     padding-left: 1rem;
     width: 100%;
+    
 
     &__text {
         height: 25vh;
@@ -31,7 +35,7 @@
 
     &__image {
         width: 100%;
-
+        padding-bottom: 1rem;
     }
 }
 

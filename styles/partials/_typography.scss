@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @font-face {
     font-family: "Avenir Next";
     src: url(/assets/fonts/AvenirNextLTPro-Regular.otf) format("otf");
@@ -16,4 +18,14 @@
     font-weight: 700;
 }
 
+.about {
+   color: $color-black;
 
+   &__heading {
+        font-weight: 600;
+   }
+
+   &__quote {
+        line-height: 2;
+   }
+}
