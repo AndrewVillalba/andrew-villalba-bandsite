@@ -20,7 +20,36 @@
   font-weight: 600;
 }
 .about__quote {
-  line-height: 2;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  padding-bottom: 0.4rem;
+}
+.about__bandname {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  padding-top: 0.6rem;
+}
+.about__desc {
+  font-size: 0.8125rem;
+  padding-bottom: 1rem;
+  line-height: 1.125rem;
+}
+
+.gallery__heading {
+  color: #323232;
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.footer {
+  color: #FAFAFA;
+}
+.footer__heading {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 * {
@@ -63,6 +92,20 @@
   border-bottom: solid white 5px;
 }
 
+.footer {
+  background-color: #323232;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+.footer__heading {
+  padding-bottom: 1rem;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 43%;
+}
+
 .hero {
   background-image: url(/assets/images/hero-bio.jpg);
   background-size: cover;
@@ -95,8 +138,17 @@
 
 .gallery {
   width: 100%;
+  padding: 16px;
+  background-color: #FAFAFA;
+}
+.gallery__heading {
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 .gallery__photos {
   display: flex;
   flex-direction: column;
+}
+.gallery__photos-img {
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=bio.css.map */

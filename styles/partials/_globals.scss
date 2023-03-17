@@ -43,3 +43,23 @@
         }
 
 }
+
+.footer {
+    background-color: $color-black;
+    padding: 1rem;
+    padding-top: 1.5rem;
+
+    &__heading {
+        padding-bottom: 1rem;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 43%;
+    }
+
+    &__socials-icon [
+        height: 2rem;
+    ]
+}
