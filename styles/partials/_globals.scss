@@ -21,7 +21,7 @@ header {
     align-items: center;
 
     &__logo {
-        padding-bottom: 1rem;
+        padding-bottom: .8125rem;
         padding-top: 1rem;
     }
 
@@ -36,11 +36,11 @@ header {
             text-decoration: none;
             color: $color-silver;
             width: 50%;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
 
             &--active {
                 color: $color-white;
-                border-bottom: solid $color-white 5px;
+                border-bottom: solid $color-white 3px;
             }
         }
     }
@@ -61,7 +61,23 @@ header {
         width: 43%;
     }
 
-    
+    &__logo {
+        padding-top: 3rem;
+    }
 
+    &__copyright {
+        padding-top: .75rem;
+        font-size: .6875rem;
+    }
+}
+
+.info {
     
+    &__box {
+        padding-top: 1rem;
+    }
+
+    &__box-content {
+        padding-top: 1rem;
+    }
 }

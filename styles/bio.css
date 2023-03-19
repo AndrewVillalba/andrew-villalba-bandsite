@@ -13,28 +13,41 @@
   src: url(/assets/fonts/AvenirNextLTPro-Bold.otf) format("otf");
   font-weight: 700;
 }
+.navbar-list__item {
+  font-size: 0.8125rem;
+}
+.navbar-list__item--active {
+  font-weight: 500;
+}
+
+.hero__text {
+  font-weight: 600;
+}
+
 .about {
   color: #323232;
 }
 .about__heading {
   font-weight: 600;
 }
-.about__quote {
+
+.quote-section__quote {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.375rem;
-  padding-bottom: 0.4rem;
 }
-.about__bandname {
-  font-size: 14px;
+
+.bio__bandname {
+  font-size: 0.875rem;
   font-weight: 500;
   padding-bottom: 1rem;
   padding-top: 0.6rem;
 }
-.about__desc {
-  font-size: 0.8125rem;
+.bio__desc {
+  font-size: 13px;
   padding-bottom: 1rem;
   line-height: 1.125rem;
+  font-weight: 400;
 }
 
 .gallery__heading {
@@ -49,10 +62,21 @@
 }
 .footer__heading {
   font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer__copyright {
+  font-size: 0.8125rem;
+}
+
+.info__box-company {
+  font-size: 0.8125rem;
   font-weight: 500;
 }
-.footer__info-box-company {
-  font-size: 13px;
+.info__box-content {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-size: 0.8125rem;
 }
 
 * {
@@ -74,7 +98,7 @@ header {
   align-items: center;
 }
 .navbar__logo {
-  padding-bottom: 1rem;
+  padding-bottom: 0.8125rem;
   padding-top: 1rem;
 }
 .navbar-list {
@@ -88,11 +112,11 @@ header {
   text-decoration: none;
   color: #AFAFAF;
   width: 50%;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .navbar-list__item--active {
   color: white;
-  border-bottom: solid white 5px;
+  border-bottom: solid white 3px;
 }
 
 .footer {
@@ -108,23 +132,37 @@ header {
   justify-content: space-between;
   width: 43%;
 }
+.footer__logo {
+  padding-top: 3rem;
+}
+.footer__copyright {
+  padding-top: 0.75rem;
+  font-size: 0.6875rem;
+}
+
+.info__box {
+  padding-top: 1rem;
+}
+.info__box-content {
+  padding-top: 1rem;
+}
 
 .hero {
   background-image: url(/assets/images/hero-bio.jpg);
   background-size: cover;
-  height: 25vh;
+  background-position: 0%;
+  height: 40vh;
   width: 100%;
-  position: relative;
 }
 .hero__background {
   background-color: #323232;
   position: absolute;
-  height: 25vh;
+  height: 40vh;
   width: 100%;
   opacity: 0.5;
 }
 .hero__text {
-  height: 25vh;
+  height: 40vh;
   color: white;
   display: flex;
   align-items: center;
@@ -152,6 +190,9 @@ header {
 .quote-section {
   width: 100%;
 }
+.quote-section__quote {
+  padding-bottom: 0.4rem;
+}
 .quote-section__image-container {
   width: 100%;
   display: flex;
@@ -169,7 +210,7 @@ header {
 }
 .gallery__heading {
   padding-bottom: 0.5rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 .gallery__photos {
   display: flex;
@@ -177,4 +218,7 @@ header {
 }
 .gallery__photos-img {
   padding-bottom: 1rem;
+}
+.gallery__photos-img--last {
+  padding: 0;
 }/*# sourceMappingURL=bio.css.map */

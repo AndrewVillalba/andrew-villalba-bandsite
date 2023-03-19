@@ -18,31 +18,54 @@
     font-weight: 700;
 }
 
+.navbar {
+    
+    &-list__item {
+        font-size: .8125rem;
+
+        &--active {
+            font-weight: 500;
+        }
+    }
+}
+
+.hero {
+    &__text {
+        font-weight: 600;
+    }
+}
+
 .about {
    color: $color-black;
 
    &__heading {
         font-weight: 600;
    }
+}
 
-   &__quote {
+.quote-section {
+    
+    &__quote{
         font-size: .875rem;
         font-weight: 600;
-        line-height: 1.375rem;
-        padding-bottom: 0.4rem;
-   }
+        line-height: 1.375rem;        
+    }
+}
 
-   &__bandname {
-        font-size: 14px;
+.bio {
+
+    &__bandname {
+        font-size: 0.875rem;
         font-weight: 500;
         padding-bottom: 1rem;
         padding-top: 0.6rem;
    }
 
    &__desc {
-        font-size: .8125rem;
+        font-size: 13px;
         padding-bottom: 1rem;
         line-height: 1.125rem;
+        font-weight: 400;
    }
 }
 
@@ -61,10 +84,25 @@
 
     &__heading {
         font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__copyright {
+        font-size: .8125rem;
+    }
+}
+
+.info {
+
+    &__box-company {
+        font-size: .8125rem;
         font-weight: 500;
     }
 
-    &__info-box-company {
-        font-size: 13px;
+    &__box-content {
+        text-decoration: none;
+        color: $color-white;
+        font-style: normal;
+        font-size: .8125rem;
     }
 }
