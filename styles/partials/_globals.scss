@@ -30,7 +30,11 @@ header {
         padding-top: 1rem;
 
         @include tablet {
-            padding: 2rem;
+            padding:0 2rem 0 2rem;
+        }
+
+        @include desktop {
+            padding: 0 2rem 0 8rem;
         }
     }
 
@@ -44,6 +48,10 @@ header {
             width: 30%;
         }
 
+        @include desktop {
+            width: 15%;
+        }
+
         &__item {
             text-align: center;
             text-decoration: none;
@@ -53,7 +61,7 @@ header {
 
             @include tablet {
                 width: 30%;
-                padding: 2rem 0;
+                padding: 1.5rem 0;
             }
 
             &--active {
@@ -73,8 +81,37 @@ header {
         padding: 2rem;
     }
 
+    @include desktop {
+        padding: 2rem 8rem 2rem 8rem;
+    }
+
+    &__wrapper {
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+        }
+
+        &-left {
+
+            @include tablet {
+                display: flex;
+                width: 85%;
+                align-items: center;
+            }
+        }
+
+    }
+
     &__heading {
         padding-bottom: 1rem;
+
+        @include tablet {
+            padding: 0 2.3rem 0 0;
+        }
     }
 
     &__socials {
@@ -84,16 +121,34 @@ header {
 
         @include tablet {
             width: 20%;
+            padding-top: 0.5rem;
         }
     }
 
     &__logo {
         padding-top: 3rem;
+
+        &-top {
+            display: none;
+
+            @include tablet {
+                display: inline;
+                padding-top: 0.5rem;
+            }
+        }
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__copyright {
         padding-top: .75rem;
         font-size: .6875rem;
+
+        @include tablet {
+            padding-top: 3rem;
+        }
     }
 }
 
@@ -103,9 +158,17 @@ header {
         display: flex;
         justify-content: space-between;
     }
+
+    @include desktop {
+        justify-content: flex-start;
+    }
     
     &__box {
         padding-top: 1rem;
+        
+        @include desktop {
+            padding-right: 4rem;
+        }
     }
 
     &__box-content {
