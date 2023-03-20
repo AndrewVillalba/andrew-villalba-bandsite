@@ -257,7 +257,13 @@ header {
 @media (min-width: 48rem) {
   .footer__socials {
     width: 20%;
-    padding-top: 0.5rem;
+    padding-top: 0.6rem;
+  }
+}
+@media (min-width: 80rem) {
+  .footer__socials {
+    width: 16%;
+    padding-top: 0.6rem;
   }
 }
 .footer__logo {
@@ -396,6 +402,12 @@ header {
 .quote-section__quote {
   padding-bottom: 0.4rem;
 }
+@media (min-width: 80rem) {
+  .quote-section__quote {
+    padding-right: 11rem;
+    padding-bottom: 1rem;
+  }
+}
 .quote-section__image-container {
   width: 100%;
   display: flex;
@@ -472,6 +484,11 @@ header {
   .gallery__photos-img {
     width: 31%;
     padding: 0;
+  }
+}
+@media (min-width: 80rem) {
+  .gallery__photos-img {
+    width: 31.8%;
   }
 }
 .gallery__photos-img--last {

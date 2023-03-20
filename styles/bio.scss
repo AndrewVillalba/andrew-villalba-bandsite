@@ -84,6 +84,11 @@
 
     &__quote{
         padding-bottom: 0.4rem;
+
+        @include desktop {
+            padding-right: 11rem;
+            padding-bottom: 1rem;
+        }
     }
 
     &__image-container {
@@ -162,6 +167,10 @@
         @include tablet {
             width: 31%;
             padding: 0;
+        }
+
+        @include desktop {
+            width: 31.8%;
         }
 
         &--last {

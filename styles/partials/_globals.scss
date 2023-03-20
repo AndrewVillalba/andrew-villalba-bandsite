@@ -121,7 +121,12 @@ header {
 
         @include tablet {
             width: 20%;
-            padding-top: 0.5rem;
+            padding-top: 0.6rem;
+        }
+
+        @include desktop {
+            width: 16%;
+            padding-top: 0.6rem;
         }
     }
 
