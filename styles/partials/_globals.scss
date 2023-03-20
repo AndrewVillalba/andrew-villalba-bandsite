@@ -20,9 +20,18 @@ header {
     justify-content: center;
     align-items: center;
 
+    @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     &__logo {
         padding-bottom: .8125rem;
         padding-top: 1rem;
+
+        @include tablet {
+            padding: 2rem;
+        }
     }
 
     &-list {
@@ -31,6 +40,10 @@ header {
         flex-direction: row;
         justify-content: space-around;
 
+        @include tablet {
+            width: 30%;
+        }
+
         &__item {
             text-align: center;
             text-decoration: none;
@@ -38,9 +51,14 @@ header {
             width: 50%;
             padding-bottom: 0.5rem;
 
+            @include tablet {
+                width: 30%;
+                padding: 2rem 0;
+            }
+
             &--active {
                 color: $color-white;
-                border-bottom: solid $color-white 3px;
+                border-bottom: solid $color-white 2px;
             }
         }
     }
@@ -51,6 +69,10 @@ header {
     padding: 1rem;
     padding-top: 1.5rem;
 
+    @include tablet {
+        padding: 2rem;
+    }
+
     &__heading {
         padding-bottom: 1rem;
     }
@@ -59,6 +81,10 @@ header {
         display: flex;
         justify-content: space-between;
         width: 43%;
+
+        @include tablet {
+            width: 20%;
+        }
     }
 
     &__logo {
@@ -72,6 +98,11 @@ header {
 }
 
 .info {
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
     
     &__box {
         padding-top: 1rem;

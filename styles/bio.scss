@@ -8,50 +8,58 @@
     background-image: url(/assets/images/hero-bio.jpg);
     background-size: cover;
     background-position: 0%;
-    height: 40vh;
+    height: 60vw;
     width: 100%;
-
 
     &__background {
         background-color: $color-black;
         position: absolute;
-        height: 40vh;
+        height: 60vw;
         width: 100%;
         opacity: 0.5;
     }
 
     &__text {
-        height: 40vh;
+        height: 60vw;
         color: white;
         display: flex;
         align-items: center;
         padding-left: 1rem;
         position: relative;
         z-index: 1;
+
+        @include tablet {
+            padding-left: 2rem;
+        }
     }
 }
 
 .about {
     padding: 0 1rem;
 
-    &__heading {
-        padding: 1.5rem 0 1rem 0;  
-    }
-    
-    &__image-container {
-       width: 100%;
-       display: flex;
-       justify-content: center;
+    @include tablet {
+        padding: 2rem;
     }
 
-    &__image {
-        width: 100%;
-        padding-bottom: 1rem;
+    &__heading {
+        padding: 1.5rem 0 1rem 0;
+    }
+
+    &__bandname {
+        padding: 1.5rem 0 1rem 0;
+
+        @include tablet {
+            padding: 2rem 0 1rem 4rem ;
+        }
     }
 }
 
 .quote-section {
     width: 100%;
+
+    @include tablet {
+        padding: 0 4rem;
+    }
 
     &__quote{
         padding-bottom: 0.4rem;
@@ -60,12 +68,27 @@
     &__image-container {
         width: 100%;
         display: flex;
-        justify-content: center;   
+        justify-content: center;
     } 
     
     &__image {
         width: 100%;
         padding-bottom: 1rem;
+    }
+}
+
+.bio {
+
+    @include tablet {
+        padding: 0 4rem;
+        display: flex;
+    }
+
+    &__desc {
+
+        @include tablet {
+            padding-right: 1.5rem;
+        }
     }
 }
 
@@ -75,18 +98,39 @@
     padding: 16px;
     background-color: $color-alabaster;
 
+    @include tablet {
+        padding: 2rem;
+    }
+
     &__heading {
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
+
+        @include tablet {
+            padding-bottom: 1.5rem;
+        }
     }
 
     &__photos {
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1.3rem;
+            justify-content: space-between;
+        }
     }
     
     &__photos-img {
         padding-bottom: 1rem;
+
+        @include tablet {
+            width: 31%;
+            padding: 0;
+        }
 
         &--last {
             padding: 0;

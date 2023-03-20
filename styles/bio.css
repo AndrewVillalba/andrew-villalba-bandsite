@@ -16,12 +16,22 @@
 .navbar-list__item {
   font-size: 0.8125rem;
 }
+@media (min-width: 48rem) {
+  .navbar-list__item {
+    font-size: 0.875rem;
+  }
+}
 .navbar-list__item--active {
   font-weight: 500;
 }
 
 .hero__text {
   font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .hero__text {
+    font-size: 3.75rem;
+  }
 }
 
 .about {
@@ -30,24 +40,59 @@
 .about__heading {
   font-weight: 600;
 }
+@media (min-width: 48rem) {
+  .about__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
+.about__bandname {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+@media (min-width: 48rem) {
+  .about__bandname {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
 
 .quote-section__quote {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.375rem;
 }
-
-.bio__bandname {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding-bottom: 1rem;
-  padding-top: 0.6rem;
+@media (min-width: 48rem) {
+  .quote-section__quote {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
+.quote-section__credit {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+@media (min-width: 48rem) {
+  .quote-section__credit {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
 .bio__desc {
   font-size: 13px;
   padding-bottom: 1rem;
   line-height: 1.125rem;
   font-weight: 400;
+}
+@media (min-width: 48rem) {
+  .bio__desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.375rem;
+  }
 }
 
 .gallery__heading {
@@ -55,6 +100,13 @@
   font-size: 1.5rem;
   line-height: 32px;
   font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .gallery__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
 }
 
 .footer {
@@ -64,13 +116,20 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media (min-width: 48rem) {
+  .footer__heading {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+}
 .footer__copyright {
   font-size: 0.8125rem;
 }
 
 .info__box-company {
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 550;
 }
 .info__box-content {
   text-decoration: none;
@@ -97,15 +156,31 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 48rem) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 .navbar__logo {
   padding-bottom: 0.8125rem;
   padding-top: 1rem;
+}
+@media (min-width: 48rem) {
+  .navbar__logo {
+    padding: 2rem;
+  }
 }
 .navbar-list {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+}
+@media (min-width: 48rem) {
+  .navbar-list {
+    width: 30%;
+  }
 }
 .navbar-list__item {
   text-align: center;
@@ -114,15 +189,26 @@ header {
   width: 50%;
   padding-bottom: 0.5rem;
 }
+@media (min-width: 48rem) {
+  .navbar-list__item {
+    width: 30%;
+    padding: 2rem 0;
+  }
+}
 .navbar-list__item--active {
   color: white;
-  border-bottom: solid white 3px;
+  border-bottom: solid white 2px;
 }
 
 .footer {
   background-color: #323232;
   padding: 1rem;
   padding-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .footer {
+    padding: 2rem;
+  }
 }
 .footer__heading {
   padding-bottom: 1rem;
@@ -132,6 +218,11 @@ header {
   justify-content: space-between;
   width: 43%;
 }
+@media (min-width: 48rem) {
+  .footer__socials {
+    width: 20%;
+  }
+}
 .footer__logo {
   padding-top: 3rem;
 }
@@ -140,6 +231,12 @@ header {
   font-size: 0.6875rem;
 }
 
+@media (min-width: 48rem) {
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .info__box {
   padding-top: 1rem;
 }
@@ -151,18 +248,18 @@ header {
   background-image: url(/assets/images/hero-bio.jpg);
   background-size: cover;
   background-position: 0%;
-  height: 40vh;
+  height: 60vw;
   width: 100%;
 }
 .hero__background {
   background-color: #323232;
   position: absolute;
-  height: 40vh;
+  height: 60vw;
   width: 100%;
   opacity: 0.5;
 }
 .hero__text {
-  height: 40vh;
+  height: 60vw;
   color: white;
   display: flex;
   align-items: center;
@@ -170,25 +267,39 @@ header {
   position: relative;
   z-index: 1;
 }
+@media (min-width: 48rem) {
+  .hero__text {
+    padding-left: 2rem;
+  }
+}
 
 .about {
   padding: 0 1rem;
 }
+@media (min-width: 48rem) {
+  .about {
+    padding: 2rem;
+  }
+}
 .about__heading {
   padding: 1.5rem 0 1rem 0;
 }
-.about__image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.about__bandname {
+  padding: 1.5rem 0 1rem 0;
 }
-.about__image {
-  width: 100%;
-  padding-bottom: 1rem;
+@media (min-width: 48rem) {
+  .about__bandname {
+    padding: 2rem 0 1rem 4rem;
+  }
 }
 
 .quote-section {
   width: 100%;
+}
+@media (min-width: 48rem) {
+  .quote-section {
+    padding: 0 4rem;
+  }
 }
 .quote-section__quote {
   padding-bottom: 0.4rem;
@@ -203,21 +314,58 @@ header {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 48rem) {
+  .bio {
+    padding: 0 4rem;
+    display: flex;
+  }
+}
+@media (min-width: 48rem) {
+  .bio__desc {
+    padding-right: 1.5rem;
+  }
+}
+
 .gallery {
   width: 100%;
   padding: 16px;
   background-color: #FAFAFA;
 }
+@media (min-width: 48rem) {
+  .gallery {
+    padding: 2rem;
+  }
+}
 .gallery__heading {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .gallery__heading {
+    padding-bottom: 1.5rem;
+  }
 }
 .gallery__photos {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 48rem) {
+  .gallery__photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    justify-content: space-between;
+  }
+}
 .gallery__photos-img {
   padding-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .gallery__photos-img {
+    width: 31%;
+    padding: 0;
+  }
 }
 .gallery__photos-img--last {
   padding: 0;
