@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin tablet {
     @media (min-width: 48rem) { @content; }
 }
@@ -15,7 +17,8 @@
 @mixin mob_sec_header {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 700;
+    font-weight: 600;
+    color: $color-black;
 }
 
 @mixin mob_subheader {

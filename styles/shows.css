@@ -1,0 +1,17 @@
+.hero {
+  background-image: url(/assets/images/hero-shows.jpg);
+  height: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__background {
+  height: 80vw;
+}
+.hero__text {
+  height: 80vw;
+}
+.hero__soundcloud {
+  z-index: 2;
+  width: 90%;
+}/*# sourceMappingURL=shows.css.map */

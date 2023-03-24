@@ -138,6 +138,13 @@
   font-size: 0.8125rem;
 }
 
+.comment-section__heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #323232;
+}
+
 * {
   font-family: "Avenir Next";
   padding: 0;
@@ -493,4 +500,64 @@ header {
 }
 .gallery__photos-img--last {
   padding: 0;
+}
+
+.comment-input {
+  padding: 1rem;
+}
+.comment-input__heading {
+  padding-bottom: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+}
+.input-wrapper__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 2.25rem;
+  border-radius: 50%;
+  height: 2.25rem;
+}
+.input-wrapper__inputs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.input-wrapper__name {
+  width: 70vw;
+  height: 10vw;
+  padding-left: 0.5rem;
+}
+.input-wrapper__comment {
+  height: 30vw;
+  text-align: left;
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+  overflow-wrap: break-word;
+}
+
+.comment-container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.comment-card {
+  display: flex;
+  justify-content: space-around;
+}
+.comment-card__img {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comment-card__info {
+  display: flex;
+  flex-direction: column;
+}
+.comment-card__info-top {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=bio.css.map */

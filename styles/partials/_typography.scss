@@ -152,3 +152,10 @@
         font-size: .8125rem;
     }
 }
+
+.comment-section {
+    
+    &__heading{
+        @include mob_sec_header
+    }
+}

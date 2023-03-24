@@ -179,5 +179,68 @@
     }
 }
 
+.comment-input {
+    padding: 1rem;
 
+    &__heading {
+        padding-bottom: 1rem;
+    }
+}
 
+.input-wrapper {
+    display: flex;
+
+    &__image {
+        object-fit: cover;
+        width: 2.25rem;
+        border-radius: 50%;
+        height: 2.25rem;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    &__name {
+        width: 70vw;
+        height: 10vw;
+        padding-left: 0.5rem;
+    }
+
+    &__comment {
+        height: 30vw;
+        text-align: left;
+        padding-bottom: 4rem;
+        padding-left: 0.5rem;
+        overflow-wrap: break-word;
+    }
+}
+
+.comment-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.comment-card {
+    display: flex;
+    justify-content: space-around;
+
+    &__img {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+        }
+    }   
+}
