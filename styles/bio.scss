@@ -209,7 +209,7 @@
         padding-left: 0.5rem;
     }
 
-    &__comment {
+    &__text {
         height: 30vw;
         text-align: left;
         padding-bottom: 4rem;
@@ -228,10 +228,10 @@
     justify-content: space-around;
 
     &__img {
-        width: 2.25rem;
-        height: 2.25rem;
+        background-color: grey;
         border-radius: 50%;
-        object-fit: cover;
+        height: 2.25rem;
+        width: 2.25rem;
     }
 
     &__info {

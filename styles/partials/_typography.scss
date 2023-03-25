@@ -153,9 +153,11 @@
     }
 }
 
-.comment-section {
+.comment-input {
     
     &__heading{
         @include mob_sec_header
     }
 }
+
+

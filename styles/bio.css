@@ -138,7 +138,7 @@
   font-size: 0.8125rem;
 }
 
-.comment-section__heading {
+.comment-input__heading {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -529,7 +529,7 @@ header {
   height: 10vw;
   padding-left: 0.5rem;
 }
-.input-wrapper__comment {
+.input-wrapper__text {
   height: 30vw;
   text-align: left;
   padding-bottom: 4rem;
@@ -547,11 +547,10 @@ header {
   justify-content: space-around;
 }
 .comment-card__img {
-  width: 2.25rem;
-  height: 2.25rem;
+  background-color: grey;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 2.25rem;
+  width: 2.25rem;
 }
 .comment-card__info {
   display: flex;
