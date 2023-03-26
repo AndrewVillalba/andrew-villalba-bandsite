@@ -21,3 +21,14 @@
         width: 90%;
     }
 }
+
+.shows {
+
+    &-container {
+        
+        &__sections {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

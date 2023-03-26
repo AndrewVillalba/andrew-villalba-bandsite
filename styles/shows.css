@@ -14,4 +14,9 @@
 .hero__soundcloud {
   z-index: 2;
   width: 90%;
+}
+
+.shows-container__sections {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=shows.css.map */
