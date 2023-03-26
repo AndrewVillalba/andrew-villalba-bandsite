@@ -39,12 +39,8 @@ function showHeadings() {
     showsContainerSectionsLocation.innerText = 'LOCATION';
 }
 
-
 function showsList(obj) {
 
-    
-    
-    
     const showsContainerCard = document.createElement('div');
     showsContainerCard.classList.add('shows-container__card')
     showsContainer.appendChild(showsContainerCard);

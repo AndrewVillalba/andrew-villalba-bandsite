@@ -7,7 +7,7 @@ const comments = [
     text: `I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.`}
 ]
 
-const commentContainer = document.querySelector('.comment-container')
+const commentContainer = document.querySelector('.comment-container');
 
 function createCard(obj) {
 
@@ -43,76 +43,12 @@ function createCard(obj) {
     commentCardInfo.appendChild(commentCardInfoText);
 } 
 
-// comments.forEach(comment => {
-//     displayComment(comment)
-// })
-
-
-// const inputName = document.querySelector('.input-wrapper__name');
-// const inputText = document.querySelector('.input-wrapper__text');
-// const inputTest = document.querySelector('.input-wrapper__submit');
-
-// function submitComment(e) {
-//     e.preventDefault();
-
-//     const commentCard = document.createElement('div');
-//     commentCard.classList.add('comment-card');
-//     commentContainer.appendChild(commentCard);
-
-//     const commentCardImg = document.createElement('div');
-//     commentCardImg.classList.add('comment-card__img');
-//     commentCard.appendChild(commentCardImg);
-
-//     const commentCardInfo = document.createElement('div');
-//     commentCardInfo.classList.add('comment-card__info');
-//     commentCard.appendChild(commentCardInfo);
-
-//     const commentCardInfoTop = document.createElement('div');
-//     commentCardInfoTop.classList.add('comment-card__info-top');
-//     commentCardInfo.appendChild(commentCardInfoTop);
-
-//     const commentCardInfoName = document.createElement('h5');
-//     commentCardInfoName.classList.add('comment-card__info-name');
-//     commentCardInfoName.innerText = inputName.value;
-//     commentCardInfoTop.appendChild(commentCardInfoName);
-
-//     const commentCardInfoDate = document.createElement(`p`);
-//     commentCardInfoDate.classList.add('comment-card__info-date');
-//     commentCardInfoDate.innerText = obj.date;
-//     commentCardInfoTop.appendChild(commentCardInfoDate);
-
-//     const commentCardInfoText = document.createElement(`p`);
-//     commentCardInfoText.classList.add('comment-card__info-text');
-//     commentCardInfoText.innerText = inputText.value;
-//     commentCardInfo.appendChild(commentCardInfoText);
-
-//     return commentCard
-// }
-
-// inputSubmit.addEventListener(`submit`, submitComment)
-
-// function displayCommentsTwo(comments) {
-
-    
-//     comments.forEach((comment)=>{
-//         displayComment(comment)
-//     });
-// }
-
-// comments.forEach((comment)=>{
-//     createCard(comment);
-// });
-
-
-
 function renderComments(comments) {
     commentContainer.innerHTML = "";
     comments.forEach((comment)=>{
         createCard(comment);
     });
 }
-
-
 
 function submitComment(e){
     e.preventDefault();
