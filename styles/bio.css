@@ -28,6 +28,10 @@
 .hero__text {
   font-weight: 600;
 }
+.hero__text-small {
+  color: white;
+  font-size: 0.875rem;
+}
 @media (min-width: 48rem) {
   .hero__text {
     font-size: 3.75rem;
@@ -143,6 +147,44 @@
   line-height: 2rem;
   font-weight: 600;
   color: #323232;
+}
+
+.input-wrapper__label {
+  color: #AFAFAF;
+  font-size: 0.6875rem;
+  font-weight: 550;
+}
+.input-wrapper__name {
+  color: #323232;
+}
+.input-wrapper ::-moz-placeholder {
+  color: #000000;
+}
+.input-wrapper ::placeholder {
+  color: #000000;
+}
+.input-wrapper__submit {
+  color: #FAFAFA;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.comment-card__info-name {
+  color: #323232;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.comment-card__info-date {
+  color: #AFAFAF;
+  font-size: 0.75rem;
+}
+.comment-card__info-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.shows-heading {
+  font-weight: 600;
 }
 
 * {
@@ -503,7 +545,7 @@ header {
 }
 
 .comment-input {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .comment-input__heading {
   padding-bottom: 1rem;
@@ -511,6 +553,8 @@ header {
 
 .input-wrapper {
   display: flex;
+  border-bottom: solid 2px #E1E1E1;
+  margin-bottom: 1rem;
 }
 .input-wrapper__image {
   -o-object-fit: cover;
@@ -518,23 +562,46 @@ header {
   width: 2.25rem;
   border-radius: 50%;
   height: 2.25rem;
+  margin-top: 1.2rem;
 }
 .input-wrapper__inputs {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
+.input-wrapper__label {
+  padding-bottom: 0.25rem;
+}
 .input-wrapper__name {
-  width: 70vw;
-  height: 10vw;
+  width: 74vw;
+  height: 13vw;
   padding-left: 0.5rem;
+  padding-top: 0.6rem;
+  margin-bottom: 1rem;
+  border-color: #E1E1E1;
+  border-radius: 0.25rem;
+  background-color: #FAFAFA;
+  resize: none;
 }
 .input-wrapper__text {
   height: 30vw;
   text-align: left;
   padding-bottom: 4rem;
   padding-left: 0.5rem;
-  overflow-wrap: break-word;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-color: #E1E1E1;
+  border-radius: 0.25rem;
+  background-color: #FAFAFA;
+  resize: none;
+}
+.input-wrapper__submit {
+  width: 74vw;
+  height: 13vw;
+  background-color: #323232;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
 .comment-container {
@@ -545,18 +612,27 @@ header {
 .comment-card {
   display: flex;
   justify-content: space-around;
+  border-bottom: solid 2px #E1E1E1;
+  margin-bottom: 1rem;
 }
 .comment-card__img {
-  background-color: grey;
+  background-color: #E1E1E1;
   border-radius: 50%;
   height: 2.25rem;
-  width: 2.25rem;
+  min-width: 2.25rem;
 }
 .comment-card__info {
   display: flex;
   flex-direction: column;
+  padding-left: 0.75rem;
+  min-width: 70vw;
+  word-wrap: break-word;
 }
 .comment-card__info-top {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.comment-card__info-text {
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=bio.css.map */

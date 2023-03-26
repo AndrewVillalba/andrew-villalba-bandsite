@@ -43,7 +43,7 @@ function createCard(obj) {
     commentCardInfo.appendChild(commentCardInfoText);
 } 
 
-function renderComments(comments) {
+function displayComments(comments) {
     commentContainer.innerHTML = "";
     comments.forEach((comment)=>{
         createCard(comment);
@@ -60,10 +60,11 @@ function submitComment(e){
     };
     
     comments.unshift(formSubmit);
-    renderComments(comments)
+    inputSubmit.reset()
+    displayComments(comments)
 }
 
 const inputSubmit = document.querySelector(`.input-wrapper__inputs`);
 
 inputSubmit.addEventListener('submit', submitComment);
-renderComments(comments);
+displayComments(comments);

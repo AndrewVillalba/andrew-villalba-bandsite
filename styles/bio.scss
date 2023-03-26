@@ -180,7 +180,7 @@
 }
 
 .comment-input {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 
     &__heading {
         padding-bottom: 1rem;
@@ -189,12 +189,15 @@
 
 .input-wrapper {
     display: flex;
+    border-bottom: solid 2px $color-mercury;
+    margin-bottom: 1rem;
 
     &__image {
         object-fit: cover;
         width: 2.25rem;
         border-radius: 50%;
         height: 2.25rem;
+        margin-top: 1.2rem;
     }
 
     &__inputs {
@@ -203,10 +206,20 @@
         padding-left: 1rem;
     }
 
+    &__label {
+        padding-bottom: 0.25rem;
+    }
+
     &__name {
-        width: 70vw;
-        height: 10vw;
+        width: 74vw;
+        height: 13vw;
         padding-left: 0.5rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1rem;
+        border-color: $color-mercury;
+        border-radius: .25rem;
+        background-color: $color-alabaster;
+        resize: none;
     }
 
     &__text {
@@ -214,7 +227,21 @@
         text-align: left;
         padding-bottom: 4rem;
         padding-left: 0.5rem;
-        overflow-wrap: break-word;
+        padding-top: 0.5rem;
+        margin-bottom: 1rem;
+        border-color: $color-mercury;
+        border-radius: .25rem;
+        background-color: $color-alabaster;
+        resize: none;
+    }
+
+    &__submit {
+        width: 74vw;
+        height: 13vw;
+        background-color: $color-black;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -226,21 +253,31 @@
 .comment-card {
     display: flex;
     justify-content: space-around;
+    border-bottom: solid 2px $color-mercury;
+    margin-bottom: 1rem;
 
     &__img {
-        background-color: grey;
+        background-color: $color-mercury;
         border-radius: 50%;
         height: 2.25rem;
-        width: 2.25rem;
+        min-width: 2.25rem;
     }
 
     &__info {
         display: flex;
         flex-direction: column;
+        padding-left: 0.75rem;
+        min-width: 70vw;
+        word-wrap: break-word;
 
         &-top {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 0.5rem;
+        }
+
+        &-text {
+            padding-bottom: 1rem;
         }
     }   
 }

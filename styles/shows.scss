@@ -1,34 +1,49 @@
 @use "partials/variables" as *;
 @use "partials/mixins" as *;
+@use "partials/typography" as *;
 
 .hero {
     background-image: url(/assets/images/hero-shows.jpg);
-    height: 80vw;
+    height: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     &__background {
-        height: 80vw;
+        height: 90vw;
+    }
+
+    &__text-small {
+        z-index: 4;
+        padding-top: 2rem;
+        padding-left: 1rem;
     }
 
     &__text {
         height: 80vw;
+        width: 70vw;
     }
 
     &__soundcloud {
         z-index: 2;
-        width: 90%;
+        width: 95vw;
+        height: 45vw;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
     }
 }
 
 .shows {
+    padding: 1rem;
+
+    &-heading {
+        padding: 1rem 0 1rem 0 ;
+    }
 
     &-container {
         
         &__sections {
-            display: flex;
-            justify-content: space-around;
+            display: none;
         }
     }
 }

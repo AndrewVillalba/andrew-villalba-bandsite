@@ -38,6 +38,11 @@
     &__text {
         font-weight: 600;
 
+        &-small {
+            color: $color-white;
+            font-size: .875rem;
+        }
+
         @include tablet {
             font-size: 3.75rem;
         }
@@ -154,9 +159,61 @@
 }
 
 .comment-input {
-    
+
     &__heading{
         @include mob_sec_header
+    }
+}
+
+.input-wrapper {
+    
+    &__label {
+        color: $color-silver;
+        font-size: .6875rem;
+        font-weight: 550;
+    }
+
+    &__name {
+        color: $color-black;
+    }
+
+    ::placeholder {
+        color: $color-dark-black;
+    }
+
+    &__submit {
+        color: $color-alabaster;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+.comment-card {
+
+    &__info {
+
+        &-name {
+            color: $color-black;
+            font-size: .75rem;
+            font-weight: 600;
+        }
+
+        &-date {
+            color: $color-silver;
+            font-size: .75rem;
+        }
+
+        &-text {
+            font-size: .75rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.shows {
+
+    &-heading {
+        font-weight: 600;
     }
 }
 
