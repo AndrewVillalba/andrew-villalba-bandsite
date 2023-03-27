@@ -33,6 +33,12 @@
   font-size: 0.875rem;
 }
 @media (min-width: 48rem) {
+  .hero__text-small {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 48rem) {
   .hero__text {
     font-size: 3.75rem;
   }
@@ -165,7 +171,7 @@
 }
 .input-wrapper__submit {
   color: #FAFAFA;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -185,6 +191,36 @@
 
 .shows-heading {
   font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .shows-heading {
+    font-size: 2.5rem;
+  }
+}
+.shows-container__section-item {
+  color: #AFAFAF;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.shows-container__card {
+  border-bottom: solid 0.125rem #AFAFAF;
+}
+.shows-container__card-section {
+  font-size: 0.6875rem;
+  font-weight: 525;
+  color: #AFAFAF;
+}
+.shows-container__card-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.shows-container__card-text {
+  font-size: 0.875rem;
+}
+.shows-container__card-button {
+  color: white;
+  font-size: 1rem;
+  font-weight: 550;
 }
 
 * {
@@ -612,7 +648,7 @@ header {
 .comment-card {
   display: flex;
   justify-content: space-around;
-  border-bottom: solid 2px #E1E1E1;
+  border-bottom: solid 1.5px #E1E1E1;
   margin-bottom: 1rem;
 }
 .comment-card__img {

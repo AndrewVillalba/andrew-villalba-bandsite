@@ -9,19 +9,36 @@
     flex-direction: column;
     justify-content: center;
 
+    @include tablet {
+        height: 77vw;
+    }
+
     &__background {
         height: 90vw;
+
+        @include tablet {
+            height: 77vw;
+        }
     }
 
     &__text-small {
         z-index: 4;
-        padding-top: 2rem;
+        padding-top: 10vw;
         padding-left: 1rem;
+
+        @include tablet {
+            padding-left: 2rem;
+        }
     }
 
     &__text {
         height: 80vw;
         width: 70vw;
+
+        @include tablet {
+            height: 25vw;
+            width: 75vw;
+        }
     }
 
     &__soundcloud {
@@ -30,20 +47,97 @@
         height: 45vw;
         padding-left: 1rem;
         padding-bottom: 2rem;
+
+        @include tablet {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            height: 25vw;
+            width: 60vw;
+        }
     }
 }
 
 .shows {
-    padding: 1rem;
+    // padding: 1rem;
+
+    @include tablet {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
 
     &-heading {
-        padding: 1rem 0 1rem 0 ;
+        padding: 1rem 0 1rem 1rem ;
+
+        @include tablet {
+            padding: 2rem 0 2rem 1rem ;
+        }
     }
 
     &-container {
         
         &__sections {
             display: none;
+
+            @include tablet {
+                width: 95vw;
+                display: flex;
+                padding-left: 1rem;
+            }
+        }
+
+        &__section-item {
+            width: 27%;
+        }
+
+        &__card {
+            border-bottom: solid $color-mercury 2px;
+
+            @include tablet {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-width: 90%;
+            }
+
+            &-section {
+                padding: 1rem 0 0 1rem;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            &-date {
+                padding: 0.5rem 0 0 1rem;
+
+                @include tablet {
+                    width: 30%;
+                    padding: 0.5rem 0 0 1rem;
+                }
+            }
+
+            &-text {
+                padding: 0.5rem 0 0 1rem;
+
+                @include tablet {
+                    width: 29%;
+                }
+            }
+
+            &-button {
+                margin: 1rem 0 1rem 1rem;
+                width: 90vw;
+                height: 13vw;
+                background-color: $color-black;
+                border: none;
+                border-radius: .25rem;
+
+                @include tablet {
+                    width: 20vw;
+                    height: 5vw;
+                    margin-right: 1rem;
+                }
+            }
         }
     }
 }
