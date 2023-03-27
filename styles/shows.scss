@@ -13,11 +13,22 @@
         height: 77vw;
     }
 
+    @include desktop {
+        height: 46vw;
+        margin-bottom: 4rem;
+        flex-direction: row;
+
+    }
+
     &__background {
         height: 90vw;
 
         @include tablet {
             height: 77vw;
+        }
+
+        @include desktop {
+            height: 46vw;
         }
     }
 
@@ -29,6 +40,10 @@
         @include tablet {
             padding-left: 2rem;
         }
+        
+        @include desktop {
+            padding-left: 8rem;
+        }
     }
 
     &__text {
@@ -38,6 +53,10 @@
         @include tablet {
             height: 25vw;
             width: 75vw;
+        }
+
+        @include desktop {
+            width: 49vw;
         }
     }
 
@@ -54,15 +73,25 @@
             height: 25vw;
             width: 60vw;
         }
+
+        @include desktop {
+            width: 40vw;
+            padding-bottom: 0;
+        }
     }
 }
 
 .shows {
-    // padding: 1rem;
 
     @include tablet {
         margin-bottom: 1rem;
         padding: 1rem;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8rem;
     }
 
     &-heading {
@@ -70,6 +99,11 @@
 
         @include tablet {
             padding: 2rem 0 2rem 1rem ;
+        }
+
+        @include desktop {
+            padding-right: 8rem;
+            padding-top: 0rem;
         }
     }
 
@@ -87,6 +121,10 @@
 
         &__section-item {
             width: 27%;
+
+            @include desktop {
+                width: 17.5%;
+            }
         }
 
         &__card {
@@ -97,6 +135,10 @@
                 justify-content: space-between;
                 align-items: center;
                 border-width: 90%;
+            }
+
+            @include desktop {
+                padding-right: 4rem;
             }
 
             &-section {
@@ -136,6 +178,11 @@
                     width: 20vw;
                     height: 5vw;
                     margin-right: 1rem;
+                }
+
+                @include desktop {
+                    width: 12vw;
+                    height: 3vw;
                 }
             }
         }

@@ -176,6 +176,10 @@
         color: $color-silver;
         font-size: .6875rem;
         font-weight: 550;
+
+        @include tablet {
+            font-size: .8125rem;
+        }
     }
 
     &__name {
@@ -190,6 +194,10 @@
         color: $color-alabaster;
         font-size: .875rem;
         font-weight: 600;
+
+        @include tablet {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -201,22 +209,33 @@
             color: $color-black;
             font-size: .75rem;
             font-weight: 600;
+
+            @include tablet {
+                font-size: .875rem;
+            }
         }
 
         &-date {
             color: $color-silver;
             font-size: .75rem;
+
+            @include tablet {
+                font-size: .875rem;
+            }
         }
 
         &-text {
             font-size: .75rem;
             font-weight: 400;
+
+            @include tablet {
+                font-size: .875rem;
+            }
         }
     }
 }
 
 .shows {
-    
 
     &-heading {
         font-weight: 600;
@@ -235,8 +254,7 @@
         }
 
         &__card {
-            border-bottom: solid .125rem $color-silver;
-            
+
             &-section {
                 font-size: .6875rem;
                 font-weight: 525;

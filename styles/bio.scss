@@ -182,6 +182,10 @@
 .comment-input {
     padding: 1rem 1rem 0 1rem;
 
+    @include tablet {
+        padding: 2rem 4rem 0 4rem
+    }
+
     &__heading {
         padding-bottom: 1rem;
     }
@@ -192,12 +196,21 @@
     border-bottom: solid 2px $color-mercury;
     margin-bottom: 1rem;
 
+    @include tablet {
+        margin-bottom: 2rem;
+    }
+
     &__image {
         object-fit: cover;
         width: 2.25rem;
         border-radius: 50%;
         height: 2.25rem;
         margin-top: 1.2rem;
+
+        @include tablet {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 
     &__inputs {
@@ -220,6 +233,13 @@
         border-radius: .25rem;
         background-color: $color-alabaster;
         resize: none;
+
+        @include tablet {
+            padding-top: 0.7rem;
+            padding-left: 1rem;
+            height: 6vw;
+            width: 100%;
+        }
     }
 
     &__text {
@@ -233,6 +253,13 @@
         border-radius: .25rem;
         background-color: $color-alabaster;
         resize: none;
+
+        @include tablet {
+            padding-left: 1rem;
+            padding-top: 1rem;
+            height: 10vw;
+            width: 100%;
+        }
     }
 
     &__submit {
@@ -242,12 +269,25 @@
         border: none;
         border-radius: 4px;
         margin-bottom: 1rem;
+
+        @include tablet {
+            margin-bottom: 2rem;
+            height: 6vw;
+            width: 22vw; 
+            margin-left: 24rem;
+            margin-top: 1rem;
+        }
     }
 }
 
 .comment-container {
     padding-right: 1rem;
     padding-left: 1rem;
+
+    @include tablet{
+        padding: 0 4rem 0 4rem;
+    }
+    
 }
 
 .comment-card {
@@ -256,11 +296,20 @@
     border-bottom: solid 1.5px $color-mercury;
     margin-bottom: 1rem;
 
+    @include tablet {
+        margin-bottom: 2rem;
+    }
+
     &__img {
         background-color: $color-mercury;
         border-radius: 50%;
         height: 2.25rem;
         min-width: 2.25rem;
+
+        @include tablet {
+            height: 3rem;
+            min-width: 3rem;
+        }
     }
 
     &__info {
@@ -278,6 +327,10 @@
 
         &-text {
             padding-bottom: 1rem;
+
+            @include tablet {
+                padding-bottom: 2rem;
+            }
         }
     }   
 }
