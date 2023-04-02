@@ -38,6 +38,15 @@
     &__text {
         font-weight: 600;
 
+        &-large {
+            font-weight: 600; 
+            color: $color-white;
+
+            @include tablet {
+                font-size: 3.75rem;
+            }
+        }
+
         &-small {
             color: $color-white;
             font-size: .875rem;
@@ -166,7 +175,11 @@
 .comment-input {
 
     &__heading{
-        @include mob_sec_header
+        @include mob_sec_header;
+
+        @include tablet {
+            @include td_sec_header
+        }
     }
 }
 

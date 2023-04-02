@@ -1,11 +1,8 @@
-const showsArray = [
-    {date: 'Mon Sept 06 2021', venue: 'Ronald Lane', location: 'San Francisco, CA'},
-    {date: 'Tue Sept 21 2021', venue: 'Pier 3 East', location: 'San Francisco, CA'},
-    {date: 'Fri Oct 15 2021', venue: 'View Lounge', location: 'San Francisco, CA'},
-    {date: 'Sat Nov 06 2021', venue: 'Hyatt Agency', location: 'San Francisco, CA'},
-    {date: 'Fri Nov 26 2021', venue: 'Moscow Center', location: 'San Francisco, CA'},
-    {date: 'Wed Dec 15 2021', venue: 'Press Club', location: 'San Francisco, CA'},
-]
+const api = "https://project-1-api.herokuapp.com";
+const apiKey = "?api_key=dcb6d814-baad-466c-8bb0-e687accc3b55";
+const show_dates = "/showdates"
+
+let showsArray = [];
 
 const shows = document.querySelector('.shows');
 const showsContainer = document.createElement('div');
@@ -25,6 +22,7 @@ function showHeadings() {
 
     const showsContainerSectionsDate= document.createElement('p');
     showsContainerSectionsDate.classList.add('shows-container__section-item');
+    showsContainerSectionsDate.classList.add('shows-container__section-item--first');
     showsContainerSections.appendChild(showsContainerSectionsDate);
     showsContainerSectionsDate.innerText = 'DATE';
 
@@ -53,7 +51,7 @@ function showsList(obj) {
     const cardSectionArrayDate = document.createElement('p');
     cardSectionArrayDate.classList.add('shows-container__card-date');
     showsContainerCard.appendChild(cardSectionArrayDate);
-    cardSectionArrayDate.innerText = obj.date;
+    cardSectionArrayDate.innerText = new Date (obj.date).toLocaleDateString();
 
     const cardSectionVenue = document.createElement('p');
     cardSectionVenue.classList.add('shows-container__card-section');
@@ -63,7 +61,7 @@ function showsList(obj) {
     const cardSectionArrayVenue = document.createElement('p');
     cardSectionArrayVenue.classList.add('shows-container__card-text');
     showsContainerCard.appendChild(cardSectionArrayVenue)
-    cardSectionArrayVenue.innerText = obj.venue; 
+    cardSectionArrayVenue.innerText = obj.place; 
 
     const cardSectionLocation = document.createElement('p');
     cardSectionLocation.classList.add('shows-container__card-section');
@@ -86,5 +84,27 @@ showHeadings()
 showsArray.forEach((show)=>{
     showsList(show);
 });
+
+axios.get(api+show_dates+apiKey)
+.then ((response) => {
+    showsArray = response.data
+    showsArray.forEach((show)=>{
+        showsList(show);
+        let cards = document.querySelectorAll(".shows-container__card")
+
+        cards.forEach((card) => {
+    card.addEventListener('click', ()=> {
+    cards.forEach((card) => {
+        card.removeAttribute('style');
+    });
+    card.style.backgroundColor = '#E1E1E1'
+    })
+    });
+})
+
+})
+.catch ((error)=>{
+    console.error(error)
+})
 
 

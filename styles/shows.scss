@@ -10,44 +10,57 @@
     justify-content: center;
 
     @include tablet {
-        height: 77vw;
+        height: 75vw;
     }
 
     @include desktop {
-        height: 46vw;
+        height: 63vw;
         margin-bottom: 4rem;
         flex-direction: row;
-
+        align-items: center;
+        background-position: top;
+        margin-bottom: 0;
     }
 
     &__background {
         height: 90vw;
+        z-index: 1;
+        opacity: 50%;
 
         @include tablet {
-            height: 77vw;
+            height: 75vw;
         }
 
         @include desktop {
-            height: 46vw;
-        }
-    }
-
-    &__text-small {
-        z-index: 4;
-        padding-top: 10vw;
-        padding-left: 1rem;
-
-        @include tablet {
-            padding-left: 2rem;
-        }
-        
-        @include desktop {
-            padding-left: 8rem;
+            height: 63vw;
         }
     }
 
     &__text {
-        height: 80vw;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include desktop {
+            padding-left: 0;
+            padding-top: 8rem;
+            padding-right: 4rem;
+        }
+    }
+
+    &__text-small {
+        z-index: 5;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            padding-top: 6rem;
+        }
+    }
+
+    &__text-large {
+        z-index: 5;
         width: 70vw;
 
         @include tablet {
@@ -56,7 +69,7 @@
         }
 
         @include desktop {
-            width: 49vw;
+            width: 38vw;
         }
     }
 
@@ -68,14 +81,15 @@
         padding-bottom: 2rem;
 
         @include tablet {
-            padding-top: 2rem;
-            padding-left: 2rem;
-            height: 25vw;
+            margin: 2rem 0rem 6rem 1rem;
+            height: 30vw;
             width: 60vw;
         }
 
         @include desktop {
-            width: 40vw;
+            width: 35vw;
+            height: 11vw;
+            margin-top: 7rem;
             padding-bottom: 0;
         }
     }
@@ -91,29 +105,32 @@
     @include desktop {
         display: flex;
         justify-content: space-between;
-        padding-left: 8rem;
     }
 
     &-heading {
-        padding: 1rem 0 1rem 1rem ;
+        padding: 2rem 0rem 0rem 1rem;
 
         @include tablet {
             padding: 2rem 0 2rem 1rem ;
         }
 
         @include desktop {
-            padding-right: 8rem;
-            padding-top: 0rem;
+            padding-left: 7rem;
         }
     }
 
     &-container {
+
+        @include desktop {
+            padding-top: 3.5rem;
+            width: 75%;
+        }
         
         &__sections {
             display: none;
 
             @include tablet {
-                width: 95vw;
+                width: 78vw;
                 display: flex;
                 padding-left: 1rem;
             }
@@ -122,9 +139,20 @@
         &__section-item {
             width: 27%;
 
-            @include desktop {
-                width: 17.5%;
+            &--first {
+                
+                @include desktop {
+                    padding-right: 0rem;
+                }
             }
+
+            @include desktop {
+                width: 22.2%;
+            }
+        }
+
+        &__card:hover {
+            background-color: $color-alabaster;
         }
 
         &__card {
@@ -138,7 +166,7 @@
             }
 
             @include desktop {
-                padding-right: 4rem;
+                width: 90%;
             }
 
             &-section {
@@ -156,6 +184,10 @@
                     width: 30%;
                     padding: 0.5rem 0 0 1rem;
                 }
+
+                @include desktop {
+                    width: 25%;
+                }
             }
 
             &-text {
@@ -163,6 +195,10 @@
 
                 @include tablet {
                     width: 29%;
+                }
+
+                @include desktop {
+                    width: 25%;
                 }
             }
 

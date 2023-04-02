@@ -78,16 +78,14 @@ function submitComment(e){
 
     axios.post(api+apiComments+apiKey, formSubmit)
     .then ((response) => {
-        // comments.unshift(response.data);
+        comments.unshift(response.data)
         inputSubmit.reset()
         displayComments(comments)
     }) 
-    .catch ((response) => {
-        console.error('error!')
-    })
+    .catch ((error)=>{
+        console.error(error)
+    });
 }
-
-
 
 
 const inputSubmit = document.querySelector(`.input-wrapper__inputs`);
