@@ -328,6 +328,11 @@ header {
     padding: 1.5rem 0;
   }
 }
+@media (min-width: 80rem) {
+  .navbar-list__item {
+    width: 40%;
+  }
+}
 .navbar-list__item--active {
   color: white;
   border-bottom: solid white 2px;
@@ -645,7 +650,7 @@ header {
   .input-wrapper {
     margin-bottom: 2rem;
     justify-content: center;
-    margin: 0rem 3rem 2rem 3rem;
+    margin: 0rem 4rem 2rem 4rem;
   }
 }
 @media (min-width: 80rem) {
@@ -763,7 +768,7 @@ header {
 }
 @media (min-width: 48rem) {
   .comment-container {
-    padding: 0 4rem 0 4rem;
+    padding: 0 5rem 0 5rem;
   }
 }
 @media (min-width: 80rem) {
@@ -780,6 +785,7 @@ header {
   display: flex;
   border-bottom: solid 1.5px #E1E1E1;
   margin-bottom: 1rem;
+  width: 100%;
 }
 @media (min-width: 48rem) {
   .comment-card {

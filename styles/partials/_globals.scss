@@ -64,6 +64,10 @@ header {
                 padding: 1.5rem 0;
             }
 
+            @include desktop {
+                width: 40%;
+            }
+
             &--active {
                 color: $color-white;
                 border-bottom: solid $color-white 2px;

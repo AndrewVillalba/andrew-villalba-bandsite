@@ -400,17 +400,22 @@
     padding-left: 1rem;
   }
 }
+@media (min-width: 80rem) {
+  .shows-container__sections {
+    width: 74vw;
+  }
+}
 .shows-container__section-item {
   width: 27%;
 }
 @media (min-width: 80rem) {
   .shows-container__section-item--first {
-    padding-right: 0rem;
+    padding-right: 13.5rem;
   }
 }
 @media (min-width: 80rem) {
   .shows-container__section-item {
-    width: 22.2%;
+    width: 23.4%;
   }
 }
 .shows-container__card:hover {

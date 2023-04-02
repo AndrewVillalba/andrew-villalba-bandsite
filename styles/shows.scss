@@ -134,6 +134,10 @@
                 display: flex;
                 padding-left: 1rem;
             }
+
+            @include desktop {
+                width: 74vw;
+            }
         }
 
         &__section-item {
@@ -142,12 +146,12 @@
             &--first {
                 
                 @include desktop {
-                    padding-right: 0rem;
+                    padding-right: 13.5rem;
                 }
             }
 
             @include desktop {
-                width: 22.2%;
+                width: 23.4%;
             }
         }
 
