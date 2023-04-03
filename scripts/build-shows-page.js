@@ -93,8 +93,8 @@ axios.get(api+show_dates+apiKey)
         let cards = document.querySelectorAll(".shows-container__card")
 
         cards.forEach((card) => {
-    card.addEventListener('click', ()=> {
-    cards.forEach((card) => {
+        card.addEventListener('click', ()=> {
+        cards.forEach((card) => {
         card.removeAttribute('style');
     });
     card.style.backgroundColor = '#E1E1E1'
